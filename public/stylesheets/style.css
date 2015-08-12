@@ -1,0 +1,197 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+html > * {
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato';
+  background-color: #E6E6E6;
+  height: 100%;
+}
+
+.mobile-account{
+  margin-top: -5rem;
+  margin-right: 1rem;
+  border: 1px solid white;
+}
+
+.account {
+  margin-top: 1.2rem;
+  margin-right: 1rem;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.category {
+  font-size: 2rem;
+  color: #464D5B;
+  margin-left: 2rem;
+}
+
+.btn {
+  color: white;
+}
+
+.navbar {
+    background-color: #464D5B;
+    color: #ffffff;
+    height: 8rem;
+}
+
+.brand-name {
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 1.5rem 1.5rem;
+  color: white;
+}
+
+.header-container{
+
+  margin: 1rem 1rem;
+  max-width: 100%;
+}
+
+.movie-img{
+  box-shadow: .3rem .15rem 2px 1px rgba(0,0,0,.2)
+}
+
+.movie-img:hover{
+  opacity: 0.6;
+}
+
+.movie-collection {
+    margin-top: 10rem;
+    margin-left: 7rem;
+}
+
+.pagination li a{
+  color: grey;
+}
+
+.pagination li a.active {
+  color: green;
+  font-weight: bold;
+}
+
+.modal{
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 8rem;
+}
+
+.bg-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  -webkit-filter: blur(20px);
+}
+
+.modal-container {
+  position: relative;
+  color: white;
+  z-index: 10;
+}
+
+.modal-container .movie-poster {
+  width: 18%;
+  margin-top: 15rem;
+  margin-left: 24%;
+  float: left;
+}
+
+.info{
+ width: 43%;
+ float: left;
+ margin-top: 15rem;
+ margin-left: 6rem;
+ height: 45rem; 
+}
+
+@media(max-width: 650px){
+  .movie-img {
+    height: 25rem;
+    width: 100%;
+    border-radius: 3%;
+  }
+
+  .movie-poster {
+    margin: 1rem .5rem;
+    height: 25rem;
+    width: 45%;
+  }
+
+  .movie-collection{
+    margin-top: 10rem;
+    margin-left: 2rem;
+  }
+
+  .modal-container .movie-poster {
+  width: 50%;
+  margin-left: 24%;
+  margin-top: 2em;
+  float: left;
+  }
+
+  .info{
+ width: 75%;
+ float: left;
+ margin-top: 2rem;
+ margin-left: 6rem;
+ height: 45rem; 
+}
+
+}
+
+@media(min-width: 650px){
+  .movie-img{
+    height: 25rem;
+    width: 100%;
+    border-radius: 3%;
+
+  }
+
+  .movie-poster{
+    margin: 1rem .5rem;
+    height: 25rem;
+    width: 30%;
+  }
+}
+
+
+@media(min-width: 900px){
+    .movie-img{
+    height: 25rem;
+    width: 100%;
+    border-radius: 3%;
+
+  }
+
+  .movie-poster{
+    margin: 1rem .5rem;
+    height: 25rem;
+    width: 20%;
+  }
+}
+
+@media(min-width:1200px){
+
+  .movie-img{
+    height: 25rem;
+    width: 100%;
+    border-radius: 3%;
+
+  }
+
+  .movie-poster{
+    margin: 1rem .5rem;
+    height: 25rem;
+    width: 18%;
+  }
+
+}
+
+

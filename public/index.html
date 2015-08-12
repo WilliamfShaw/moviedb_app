@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Switch Movie App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  </head>
+  <body>
+
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-fixed-top" role="navigation">
+      <div class="header-container">
+        <a href="#" class="pull-left">
+          <img src="/images/deathstar.png" height="55" width="55">
+        </a>
+        <a href="#">
+          <p class="brand-name">Movies</p>
+        </a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle mobile-account" data-toggle="collapse" data-target="#navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span><img src="/images/arrow_down.png" height="30" width="30"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse pull-right account" id="navbar-collapse-1">
+          <a class="btn" data-target="#bs-example-navbar-collapse-1" href="#" role="button">My Account  <img src="/images/arrow_down.png" height="30" width="30"></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-container">
+      <div class="row movie-collection">
+        <p class="category">Latest Releases</p>
+      </div>
+      <div class="text-center">
+        <ul class="pagination">
+        </ul>
+      </div>
+    </div>
+    <!-- TEMPLATES -->
+    <template id="movie_img_temp">
+      <img class="movie-img" src="http://image.tmdb.org/t/p/w342{{poster_path}}" onerror="this.src='/images/no_image.jpg'" title="{{original_title}}">
+    </template>
+
+    <template id="pag-link">
+      <a data-id={{id}} class={{className}}>{{page}}</a>
+    </template>
+
+    <template id="modal-temp">
+      <div class="bg-img"></div>
+     <div class="modal-container">
+      <div class="show-poster movie-poster">
+        <img class="movie-img" src="http://image.tmdb.org/t/p/w342{{poster_path}}" onerror="this.src='/images/no_image.jpg'" title="{{original_title}}">
+      </div>
+      <div class="info">
+        <h1>{{original_title}}</h1><br>
+        <h3>Score : {{vote_average}}     |   Rating:  {{rating}}   |     Release Date: {{date}} </h3>
+        <br>
+        <hr>
+        <h3>{{overview}}</h3>
+        <br>
+        <hr>
+      </div>
+     </div>
+    </template>
+
+    <!-- SCRIPTS -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="/javascripts/application.js"></script>
+    <script src="/javascripts/models/movie.js"></script>
+    <script src="/javascripts/collections/movies.js"></script>
+    <script src="/javascripts/views/movie.js"></script>
+    <script src="/javascripts/views/movie_modal.js"></script>
+    <script src="/javascripts/views/movies.js"></script>
+    <script src="/javascripts/views/pagination.js"></script>
+    <script src="/javascripts/views/pagination_bar.js"></script>
+  </body>
+</html>
