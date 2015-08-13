@@ -1,23 +1,23 @@
 Coding challenge application showing Movies currently playing. 
 
-Tech: 
+###Tech: 
 
 Ruby
 Sinatra
 Backbone
 Handlebars
 
-To run locally: 
+###To run locally: 
 
-gem install sinatra
-gem install json
-gem install httparty
+`gem install sinatra`
+`gem install json`
+`gem install httparty`
 
-ruby application.rb
+`ruby application.rb`
 
 Visit `http://localhost:4567/` in your browser
 
-Hosted: 
+###Hosted: 
 
 [Switch Movie App](http://switch-movies.herokuapp.com)
 
