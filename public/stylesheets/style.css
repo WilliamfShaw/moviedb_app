@@ -150,7 +150,7 @@ body {
     }
     .modal-container .movie-poster {
         width: 50%;
-        margin-left: 24%;
+        margin-left: 3%;
         margin-top: 2em;
         float: left;
     }
@@ -159,13 +159,13 @@ body {
         float: left;
         margin-top: -37rem;
         margin-left: 23rem;
-        height: 45rem;
+        height: 37rem;
     }
     .overview {
         float: left;
         width: 86%;
-        margin-top: -12rem;
         margin-left: 1rem;
+        margin-top: -3rem;
     }
     .title {
         float: left;
