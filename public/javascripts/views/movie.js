@@ -1,8 +1,8 @@
 App.Views.Movie = Backbone.View.extend({
   className: 'col-lg-2 col-md-4 col-xs-6 movie-poster',
   initialize: function () {
-    console.log("New Movie View created");
-    this.template = Handlebars.compile($("#movie_img_temp").html());
+    console.log('New Movie View created');
+    this.template = Handlebars.compile($('#movie_img_temp').html());
     this.render();
   }, 
   getMovie: function () {

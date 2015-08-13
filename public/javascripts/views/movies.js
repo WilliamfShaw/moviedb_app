@@ -1,11 +1,11 @@
 App.Views.Movies = Backbone.View.extend({
-  el: ".movie-collection",
+  el: '.movie-collection',
   initialize: function () {
-    console.log("Movie Collection View Created");
+    console.log('Movie Collection View Created');
     this.listenTo(this.collection, 'reset', this.renderAll);
   },
   renderAll: function () {
-    this.$el.find("*").not(".category").remove();
+    this.$el.find('*').not('.category').remove();
     this.collection.each(this.renderOne, this);
   }, 
   renderOne: function (movie) {
