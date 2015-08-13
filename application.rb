@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'pry'
 require 'json'
 require_relative './models/movie.rb'
 

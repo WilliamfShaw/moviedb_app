@@ -6,6 +6,6 @@ class Movie
   end
 
   def self.get_movie(id)
-    @movie = HTTParty.get("http://api.themoviedb.org/3/movie/#{id}?api_key=ebea8cfca72fdff8d2624ad7bbf78e4c&&append_to_response=releases")
+    @movie = HTTParty.get("http://api.themoviedb.org/3/movie/#{id}?api_key=ebea8cfca72fdff8d2624ad7bbf78e4c&append_to_response=releases")
   end
 end

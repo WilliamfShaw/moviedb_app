@@ -9,6 +9,7 @@ App.Views.Movies = Backbone.View.extend({
     this.collection.each(this.renderOne, this);
   }, 
   renderOne: function (movie) {
+    console.log(movie)
     var movieView = new App.Views.Movie({model: movie});
     this.$el.append(movieView.el);
   }
